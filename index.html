@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMath | Quebre a Chave RSA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🔐 CryptoMath: A Chave é a Matemática!</h1>
+        <h2>Prof° Marcelo Pantaleão</h2>
+        <p>Projeto Didático de Criptografia RSA com Regra de Raiz Digital Única.</p>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2>🚨 Acesso Restrito: Tentativa de Quebra de Chave</h2>
+            <p>Use a matemática para encontrar os fatores primos e revelar a senha!</p>
+            <div class="login-container">
+                <input type="number" id="input-n" placeholder="Insira ou GERE a Chave Pública (n)">
+                <input type="text" id="input-username" placeholder="Seu Username Aqui">
+                <input type="password" id="input-password" placeholder="Sua Senha Secreta Aqui">
+                
+                <button onclick="gerarChaveAleatoria()" class="gerar-chave-button">1. GERAR CHAVE PÚBLICA (n)</button>
+                <button onclick="iniciarQuebra()">2. INICIAR CRIPTOANÁLISE</button>
+                
+                <p class="aviso" id="aviso-login"></p>
+            </div>
+        </section>
+
+        <section id="quebra-section" style="display: none;">
+            <h2>🔬 Processo de Criptoanálise em Andamento...</h2>
+            
+            <div class="chave-info">
+                <p>Chave Pública (n): <strong id="display-n"></strong></p>
+                <p>Raiz Digital (RD(n)): <strong id="display-raiz"></strong></p>
+                <p>Senha Original: <strong id="display-senha-original" style="color: #f9d423;">********</strong></p>
+            </div>
+
+            <div id="log-quebra" class="log-box">
+                <p>Inicie a quebra...</p>
+            </div>
+            
+            <div class="resultado-box" id="resultado-final" style="display: none;">
+                <h3>🎉 CHAVE QUEBRADA! Fatores p e q encontrados!</h3>
+                <p>Fator p: <strong id="display-p"></strong></p>
+                <p>Fator q: <strong id="display-q"></strong></p>
+                <p>🔑 A Senha Secreta de <strong id="display-username-final"></strong> era: <strong id="display-senha-final" style="font-size: 1.5em;"></strong></p>
+            </div>
+
+            <button onclick="resetarPagina()" class="reset-button">Tentar Outra Quebra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o aprendizado de Matemática e Criptografia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

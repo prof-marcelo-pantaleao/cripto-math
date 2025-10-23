@@ -1,0 +1,225 @@
+/* ... (Manter estilos gerais) ... */
+
+/* Estilos Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Fundo degradê */
+    color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #58ccff;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #58ccff;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para contraste */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #3a7bd5;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #f9d423;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f9d423;
+    padding-bottom: 5px;
+}
+
+
+/* Login/Input Section */
+/* ... (Manter estilos de input e container) ... */
+
+/* Login/Input Section */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background-color: #f4f4f4;
+    color: #1e3c72;
+}
+
+button {
+    padding: 12px;
+    background-color: #58ccff;
+    color: #1e3c72;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a7bd5;
+    color: white;
+}
+
+.aviso {
+    color: #f9d423;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gerar-chave-button {
+    background-color: #f9d423;
+    color: #1e3c72;
+}
+
+.gerar-chave-button:hover {
+    background-color: #ffc300;
+    color: #1e3c72;
+}
+
+button {
+    /* Cor do botão de iniciar quebra */
+    padding: 12px;
+    background-color: #58ccff;
+    color: #1e3c72;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a7bd5;
+    color: white;
+}
+
+/* ... (Manter estilos de quebra, log, responsividade) ... */
+
+/* Quebra/Log Section */
+.chave-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.log-box {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #1a1a1a;
+    border: 1px solid #f9d423;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap; /* Garante que o texto se ajuste */
+}
+
+.log-box p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #00ff00; /* Cor de terminal hacker */
+}
+
+.resultado-box {
+    text-align: center;
+    background-color: #38a169; /* Verde para sucesso */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.resultado-box h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.reset-button {
+    background-color: #e74c3c;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 2px solid #58ccff;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Responsividade (Celular/Tablet) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+    
+    .chave-info {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    .log-box {
+        height: 200px;
+    }
+}
