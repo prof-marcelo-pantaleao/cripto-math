@@ -9,7 +9,7 @@ const MAX_PRIMO = 97;
 // Raízes Digitais Válidas dos Primos de P100 > 3
 const RD_PRIMOS_MAIORES_QUE_3 = [1, 2, 4, 5, 7, 8];
 
-// Mapeamento das Tabelas Anexadas
+// Mapeamento das Tabelas
 const TABELA_SO = { 
     1: { 1: 2, 2: 3, 4: 5, 5: 6, 7: 8, 8: 9 }, 
     2: { 1: 3, 2: 4, 4: 6, 5: 7, 7: 9, 8: 1 }, 
@@ -36,7 +36,7 @@ let chaveSecreta = {
     password: ''
 };
 
-// --- Funções Auxiliares (Mantidas) ---
+// --- Funções Auxiliares ---
 
 function calcularRaizDigital(n) {
     let soma = n;
@@ -123,7 +123,7 @@ function gerarConjuntoSomas(rdSomasArray, n) {
     return { conjuntoS, logSomas };
 }
 
-// --- Geração de Chave (Mantida) ---
+// --- Geração de Chave ---
 
 function gerarChaveAleatoria() {
     let n, p, q, rd_n;
@@ -152,7 +152,7 @@ function gerarChaveAleatoria() {
     chaveSecreta.q = q;
 }
 
-// --- Lógica Principal (Corrigida e Didática) ---
+// --- Lógica Principal ---
 
 async function iniciarQuebra() {
     const n = parseInt(document.getElementById('input-n').value);
@@ -289,7 +289,7 @@ async function quebrarChave(n, raizDigitalN) {
     }
 }
 
-// --- Funções de Interface (Mantidas) ---
+// --- Funções de Interface ---
 
 function resetarPagina() {
     document.getElementById('input-n').value = '';
