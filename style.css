@@ -1,5 +1,3 @@
-/* ... (Manter estilos gerais) ... */
-
 /* Estilos Gerais e Reset */
 * {
     margin: 0;
@@ -56,10 +54,6 @@ h2 {
     border-bottom: 1px solid #f9d423;
     padding-bottom: 5px;
 }
-
-
-/* Login/Input Section */
-/* ... (Manter estilos de input e container) ... */
 
 /* Login/Input Section */
 .login-container {
@@ -131,8 +125,6 @@ button:hover {
     background-color: #3a7bd5;
     color: white;
 }
-
-/* ... (Manter estilos de quebra, log, responsividade) ... */
 
 /* Quebra/Log Section */
 .chave-info {
